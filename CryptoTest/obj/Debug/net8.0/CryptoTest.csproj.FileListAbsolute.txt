@@ -1,0 +1,14 @@
+F:\Hangman\CryptoTest\CryptoTest\bin\Debug\net8.0\CryptoTest.exe
+F:\Hangman\CryptoTest\CryptoTest\bin\Debug\net8.0\CryptoTest.deps.json
+F:\Hangman\CryptoTest\CryptoTest\bin\Debug\net8.0\CryptoTest.runtimeconfig.json
+F:\Hangman\CryptoTest\CryptoTest\bin\Debug\net8.0\CryptoTest.dll
+F:\Hangman\CryptoTest\CryptoTest\bin\Debug\net8.0\CryptoTest.pdb
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.AssemblyInfoInputs.cache
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.AssemblyInfo.cs
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.csproj.CoreCompileInputs.cache
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.dll
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\refint\CryptoTest.dll
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.pdb
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\CryptoTest.genruntimeconfig.cache
+F:\Hangman\CryptoTest\CryptoTest\obj\Debug\net8.0\ref\CryptoTest.dll
