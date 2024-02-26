@@ -90,6 +90,30 @@ namespace CryptoTest
             }
         }
 
+        private static Random random = new Random();
+
+        public static string GeneratePassword()
+        {
+            string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#!%$";
+            StringBuilder password = new StringBuilder();
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    int index = random.Next(chars.Length);
+                    password.Append(chars[index]);
+                }
+
+                if (i < 2) 
+                {
+                    password.Append('_');
+                }
+            }
+
+            return password.ToString();
+        }
+
         static void Main(string[] args)
         {
             const int iterations = 10000;
@@ -120,13 +144,19 @@ namespace CryptoTest
                 byte[] salt = GenerateSalt(16);
                 string saltString = Convert.ToBase64String(salt);
 
-                string password;
-                do
+                string password = GeneratePassword();
+                Console.WriteLine($"Random generated password: {password}");
+                Console.WriteLine("Do you want to keep it? (y/n)");
+                if(Console.ReadKey().Key == ConsoleKey.N)
                 {
-                    Console.Write("Enter a password: ");
-                    password = Console.ReadLine()!;
+                    password = "";
+                    do
+                    {
+                        Console.Write("Enter a password: ");
+                        password = Console.ReadLine()!;
+                    }
+                    while (string.IsNullOrWhiteSpace(password));
                 }
-                while (string.IsNullOrWhiteSpace(password));
 
                 string encrypted = Encrypt(contentsBase64, password, saltString, iterations);
                 string output = $"{saltString}:{encrypted}";
